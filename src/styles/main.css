@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* To use font: "font-family: 'Roboto', sans-serif;"*/
+
+/* Reset default properties */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #edf5fd;
+}
+
+/* Navigation menu styles */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  padding: 2.5vh 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: #edf5fd;
+  opacity: 0.98;
+}
+
+.logo {
+  font-size: 32px;
+  color: #4791db;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #4791db;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 125%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #4791db;
+  transition: 0.3s ease-in;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.container {
+  margin-top: 15%;
+  padding: 0 5%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4791db;
+}

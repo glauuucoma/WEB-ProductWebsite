@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/product_register.css" />
+    <script src="./scripts/product_register.js"></script>
+    <title>Davyd Kuleba</title>
+  </head>
+  <body>
+    <!-- Header Gallery -->
+    <header class="header">
+      <a href="#" class="logo">Davyd Kuleba</a>
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./product_register.html">Register product</a>
+        <a href="./reflection.html">Reflection</a>
+        <a href="./honesty.html">Honesty Pledge</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <form id="signup" action="https://httpbin.org/post" method="post">
+          <!-- Hidden Fields -->
+
+          <input type="hidden" name="FullName" id="FullName" value="Davyd Kuleba" />
+          <input type="hidden" name="studentId" id="studentId" value="147894224" />
+
+          <!-- Visible fields -->
+
+          <label for="productId">Product ID:</label>
+          <input type="text" id="productId" name="productId" pattern="\d{8}" required /><br /><br />
+
+          <label for="productDescription">Product Description:</label><br />
+          <textarea id="productDescription" name="productDescription" required></textarea
+          ><br /><br />
+
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" min="1" max="999" required /><br /><br />
+
+          <label for="supplierUsername">Supplier Username:</label>
+          <input
+            type="text"
+            id="supplierUsername"
+            name="supplierUsername"
+            pattern="[A-Za-z][A-Za-z0-9]{3,}"
+            required
+          /><br /><br />
+
+          <label>Supplier Status:</label><br />
+          <input type="checkbox" id="newSupplier" name="supplierStatus" value="New Supplier" />
+          <label for="newSupplier">New Supplier</label><br />
+          <input
+            type="checkbox"
+            id="contractSigned"
+            name="supplierStatus"
+            value="Contract Signed"
+          />
+          <label for="contractSigned">Contract Signed</label><br />
+          <input type="checkbox" id="qualityTested" name="supplierStatus" value="Quality Tested" />
+          <label for="qualityTested">Quality Tested</label><br /><br />
+
+          <label for="supplierEmail">Supplier Email:</label>
+          <input type="email" id="supplierEmail" name="supplierEmail" required /><br /><br />
+
+          <!-- Buttons -->
+
+          <input type="button" value="Submit" onclick="validateForm()" style="color: #4791db" />
+          <input type="reset" value="Reset" style="color: #4791db" /><br /><br />
+        </form>
+      </div>
+      <div class="error-container">
+        <div id="errorPanel" class="error"></div>
+      </div>
+      <div class="rep-link-wrapper">
+        <a class="github-link" href="https://github.com/glauuucoma/WEB222-a5" target="_blank"
+          >Link to my GitHub repository</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  color: #4791db;
+  width: 50%;
+  padding: 20px;
+}
+
+.error-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #faa0a0;
+  margin-bottom: 10px;
+}
+.rep-link-wrapper {
+  margin-top: 250px;
+  flex-basis: 2;
+}
+.rep-link-wrapper a {
+  font-size: 18px;
+  color: #4791db;
+}
