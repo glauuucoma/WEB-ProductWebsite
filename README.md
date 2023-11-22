@@ -7,7 +7,6 @@
 
 The primary focus of Assignment 5 was to design and develop a multi-page website featuring courses, a form page, and other relevant content. I practiced building complex HTML and CSS layouts while incorporating JavaScript functionalities. The main web page (index.html) showcases product cards displaying information about different courses, designed using Flexbox. The assignment emphasized creativity while adhering to ethical coding practices and image usage guidelines.
 
-Assignment 6 Additions:
 In Assignment 6, I extended the existing website from Assignment 5, incorporating additional HTML5 web pages with style sheets and JavaScript. Two new pages, 'product_register.html' and 'reflection.html,' were created. 'product_register.html' hosts a form allowing users/suppliers to input and submit product-related information with JavaScript validation. 'reflection.html' contains a reflective write-up addressing concepts like responsive design, web technologies, and personal learning experiences from the course.
 
 
